@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build-x86_64">
+        <df name="aes">
+          <df name="openssl">
+          </df>
+        </df>
+        <df name="base64">
+        </df>
+        <df name="bfcp">
+        </df>
+        <df name="conf">
+        </df>
+        <df name="dbg">
+        </df>
+        <df name="dns">
+        </df>
+        <df name="fmt">
+        </df>
+        <df name="hash">
+        </df>
+        <df name="hmac">
+          <df name="openssl">
+          </df>
+        </df>
+        <df name="http">
+        </df>
+        <df name="httpauth">
+        </df>
+        <df name="ice">
+        </df>
+        <df name="jbuf">
+        </df>
+        <df name="json">
+        </df>
+        <df name="list">
+        </df>
+        <df name="lock">
+        </df>
+        <df name="main">
+        </df>
+        <df name="mbuf">
+        </df>
+        <df name="md5">
+        </df>
+        <df name="mem">
+        </df>
+        <df name="mod">
+        </df>
+        <df name="mqueue">
+        </df>
+        <df name="msg">
+        </df>
+        <df name="natbd">
+        </df>
+        <df name="net">
+          <df name="linux">
+          </df>
+          <df name="posix">
+          </df>
+        </df>
+        <df name="odict">
+        </df>
+        <df name="rtp">
+        </df>
+        <df name="sa">
+        </df>
+        <df name="sdp">
+        </df>
+        <df name="sip">
+        </df>
+        <df name="sipevent">
+        </df>
+        <df name="sipreg">
+        </df>
+        <df name="sipsess">
+        </df>
+        <df name="srtp">
+        </df>
+        <df name="stun">
+        </df>
+        <df name="sys">
+        </df>
+        <df name="tcp">
+        </df>
+        <df name="telev">
+        </df>
+        <df name="tls">
+          <df name="openssl">
+          </df>
+        </df>
+        <df name="tmr">
+        </df>
+        <df name="turn">
+        </df>
+        <df name="udp">
+        </df>
+        <df name="uri">
+        </df>
+        <df name="websock">
+        </df>
+      </df>
+      <df name="debian">
+      </df>
+      <df name="docs">
+      </df>
+      <df name="include">
+        <in>re.h</in>
+        <in>re_aes.h</in>
+        <in>re_base64.h</in>
+        <in>re_bfcp.h</in>
+        <in>re_bitv.h</in>
+        <in>re_conf.h</in>
+        <in>re_crc32.h</in>
+        <in>re_dbg.h</in>
+        <in>re_dns.h</in>
+        <in>re_fmt.h</in>
+        <in>re_hash.h</in>
+        <in>re_hmac.h</in>
+        <in>re_http.h</in>
+        <in>re_httpauth.h</in>
+        <in>re_ice.h</in>
+        <in>re_jbuf.h</in>
+        <in>re_json.h</in>
+        <in>re_list.h</in>
+        <in>re_lock.h</in>
+        <in>re_main.h</in>
+        <in>re_mbuf.h</in>
+        <in>re_md5.h</in>
+        <in>re_mem.h</in>
+        <in>re_mod.h</in>
+        <in>re_mqueue.h</in>
+        <in>re_msg.h</in>
+        <in>re_natbd.h</in>
+        <in>re_net.h</in>
+        <in>re_odict.h</in>
+        <in>re_rtp.h</in>
+        <in>re_sa.h</in>
+        <in>re_sdp.h</in>
+        <in>re_sha.h</in>
+        <in>re_sip.h</in>
+        <in>re_sipevent.h</in>
+        <in>re_sipreg.h</in>
+        <in>re_sipsess.h</in>
+        <in>re_srtp.h</in>
+        <in>re_stun.h</in>
+        <in>re_sys.h</in>
+        <in>re_tcp.h</in>
+        <in>re_telev.h</in>
+        <in>re_tls.h</in>
+        <in>re_tmr.h</in>
+        <in>re_turn.h</in>
+        <in>re_types.h</in>
+        <in>re_udp.h</in>
+        <in>re_uri.h</in>
+        <in>re_websock.h</in>
+      </df>
+      <df name="mk">
+        <df name="win32">
+        </df>
+      </df>
+      <df name="rpm">
+      </df>
+      <df name="src">
+        <df name="aes">
+          <df name="apple">
+            <in>aes.c</in>
+          </df>
+          <df name="openssl">
+            <in>aes.c</in>
+          </df>
+          <in>stub.c</in>
+        </df>
+        <df name="base64">
+          <in>b64.c</in>
+        </df>
+        <df name="bfcp">
+          <in>attr.c</in>
+          <in>bfcp.h</in>
+          <in>conn.c</in>
+          <in>msg.c</in>
+          <in>reply.c</in>
+          <in>request.c</in>
+        </df>
+        <df name="conf">
+          <in>conf.c</in>
+        </df>
+        <df name="crc32">
+          <in>crc32.c</in>
+        </df>
+        <df name="dbg">
+          <in>dbg.c</in>
+        </df>
+        <df name="dns">
+          <df name="darwin">
+            <in>srv.c</in>
+          </df>
+          <df name="win32">
+            <in>srv.c</in>
+          </df>
+          <in>client.c</in>
+          <in>cstr.c</in>
+          <in>dname.c</in>
+          <in>dns.h</in>
+          <in>hdr.c</in>
+          <in>ns.c</in>
+          <in>res.c</in>
+          <in>rr.c</in>
+          <in>rrlist.c</in>
+        </df>
+        <df name="fmt">
+          <in>ch.c</in>
+          <in>hexdump.c</in>
+          <in>pl.c</in>
+          <in>print.c</in>
+          <in>prm.c</in>
+          <in>regex.c</in>
+          <in>str.c</in>
+          <in>str_error.c</in>
+          <in>time.c</in>
+          <in>unicode.c</in>
+        </df>
+        <df name="hash">
+          <in>func.c</in>
+          <in>hash.c</in>
+        </df>
+        <df name="hmac">
+          <df name="apple">
+            <in>hmac.c</in>
+          </df>
+          <df name="openssl">
+            <in>hmac.c</in>
+          </df>
+          <in>hmac.c</in>
+          <in>hmac_sha1.c</in>
+        </df>
+        <df name="http">
+          <in>auth.c</in>
+          <in>chunk.c</in>
+          <in>client.c</in>
+          <in>http.h</in>
+          <in>msg.c</in>
+          <in>server.c</in>
+        </df>
+        <df name="httpauth">
+          <in>basic.c</in>
+          <in>digest.c</in>
+        </df>
+        <df name="ice">
+          <in>cand.c</in>
+          <in>candpair.c</in>
+          <in>chklist.c</in>
+          <in>comp.c</in>
+          <in>connchk.c</in>
+          <in>ice.c</in>
+          <in>ice.h</in>
+          <in>icem.c</in>
+          <in>icesdp.c</in>
+          <in>icestr.c</in>
+          <in>stunsrv.c</in>
+          <in>util.c</in>
+        </df>
+        <df name="jbuf">
+          <in>jbuf.c</in>
+        </df>
+        <df name="json">
+          <in>decode.c</in>
+          <in>decode_odict.c</in>
+          <in>encode.c</in>
+        </df>
+        <df name="list">
+          <in>list.c</in>
+        </df>
+        <df name="lock">
+          <df name="win32">
+            <in>lock.c</in>
+          </df>
+          <in>lock.c</in>
+          <in>rwlock.c</in>
+        </df>
+        <df name="main">
+          <in>epoll.c</in>
+          <in>init.c</in>
+          <in>main.c</in>
+          <in>main.h</in>
+          <in>method.c</in>
+          <in>openssl.c</in>
+        </df>
+        <df name="mbuf">
+          <in>mbuf.c</in>
+        </df>
+        <df name="md5">
+          <in>md5.c</in>
+          <in>md5.h</in>
+          <in>wrap.c</in>
+        </df>
+        <df name="mem">
+          <in>mem.c</in>
+          <in>secure.c</in>
+        </df>
+        <df name="mod">
+          <df name="win32">
+            <in>dll.c</in>
+          </df>
+          <in>dl.c</in>
+          <in>mod.c</in>
+          <in>mod_internal.h</in>
+        </df>
+        <df name="mqueue">
+          <df name="win32">
+            <in>pipe.c</in>
+          </df>
+          <in>mqueue.c</in>
+          <in>mqueue.h</in>
+        </df>
+        <df name="msg">
+          <in>ctype.c</in>
+          <in>param.c</in>
+        </df>
+        <df name="natbd">
+          <in>filtering.c</in>
+          <in>genalg.c</in>
+          <in>hairpinning.c</in>
+          <in>lifetime.c</in>
+          <in>mapping.c</in>
+          <in>natstr.c</in>
+        </df>
+        <df name="net">
+          <df name="bsd">
+            <in>brt.c</in>
+          </df>
+          <df name="linux">
+            <in>rt.c</in>
+          </df>
+          <df name="posix">
+            <in>pif.c</in>
+          </df>
+          <df name="win32">
+            <in>wif.c</in>
+          </df>
+          <in>if.c</in>
+          <in>ifaddrs.c</in>
+          <in>net.c</in>
+          <in>netstr.c</in>
+          <in>rt.c</in>
+          <in>sock.c</in>
+          <in>sockopt.c</in>
+        </df>
+        <df name="odict">
+          <in>entry.c</in>
+          <in>odict.c</in>
+          <in>type.c</in>
+        </df>
+        <df name="rtp">
+          <in>fb.c</in>
+          <in>member.c</in>
+          <in>ntp.c</in>
+          <in>pkt.c</in>
+          <in>rr.c</in>
+          <in>rtcp.c</in>
+          <in>rtcp.h</in>
+          <in>rtp.c</in>
+          <in>sdes.c</in>
+          <in>sess.c</in>
+          <in>source.c</in>
+        </df>
+        <df name="sa">
+          <in>ntop.c</in>
+          <in>printaddr.c</in>
+          <in>pton.c</in>
+          <in>sa.c</in>
+          <in>sa.h</in>
+        </df>
+        <df name="sdp">
+          <in>attr.c</in>
+          <in>format.c</in>
+          <in>media.c</in>
+          <in>msg.c</in>
+          <in>sdp.h</in>
+          <in>session.c</in>
+          <in>str.c</in>
+          <in>util.c</in>
+        </df>
+        <df name="sha">
+          <in>sha1.c</in>
+        </df>
+        <df name="sip">
+          <in>addr.c</in>
+          <in>auth.c</in>
+          <in>contact.c</in>
+          <in>cseq.c</in>
+          <in>ctrans.c</in>
+          <in>dialog.c</in>
+          <in>keepalive.c</in>
+          <in>keepalive_udp.c</in>
+          <in>msg.c</in>
+          <in>reply.c</in>
+          <in>request.c</in>
+          <in>sip.c</in>
+          <in>sip.h</in>
+          <in>strans.c</in>
+          <in>transp.c</in>
+          <in>via.c</in>
+        </df>
+        <df name="sipevent">
+          <in>listen.c</in>
+          <in>msg.c</in>
+          <in>notify.c</in>
+          <in>sipevent.h</in>
+          <in>subscribe.c</in>
+        </df>
+        <df name="sipreg">
+          <in>reg.c</in>
+        </df>
+        <df name="sipsess">
+          <in>accept.c</in>
+          <in>ack.c</in>
+          <in>close.c</in>
+          <in>connect.c</in>
+          <in>info.c</in>
+          <in>listen.c</in>
+          <in>modify.c</in>
+          <in>reply.c</in>
+          <in>request.c</in>
+          <in>sess.c</in>
+          <in>sipsess.h</in>
+        </df>
+        <df name="srtp">
+          <in>misc.c</in>
+          <in>replay.c</in>
+          <in>srtcp.c</in>
+          <in>srtp.c</in>
+          <in>srtp.h</in>
+          <in>stream.c</in>
+        </df>
+        <df name="stun">
+          <in>addr.c</in>
+          <in>attr.c</in>
+          <in>ctrans.c</in>
+          <in>dnsdisc.c</in>
+          <in>hdr.c</in>
+          <in>ind.c</in>
+          <in>keepalive.c</in>
+          <in>msg.c</in>
+          <in>rep.c</in>
+          <in>req.c</in>
+          <in>stun.c</in>
+          <in>stun.h</in>
+          <in>stunstr.c</in>
+        </df>
+        <df name="sys">
+          <in>daemon.c</in>
+          <in>endian.c</in>
+          <in>fs.c</in>
+          <in>rand.c</in>
+          <in>sleep.c</in>
+          <in>sys.c</in>
+        </df>
+        <df name="tcp">
+          <in>tcp.c</in>
+          <in>tcp_high.c</in>
+        </df>
+        <df name="telev">
+          <in>telev.c</in>
+        </df>
+        <df name="tls">
+          <df name="openssl">
+            <in>tls.c</in>
+            <in>tls.h</in>
+            <in>tls_tcp.c</in>
+            <in>tls_udp.c</in>
+          </df>
+        </df>
+        <df name="tmr">
+          <in>tmr.c</in>
+        </df>
+        <df name="turn">
+          <in>chan.c</in>
+          <in>perm.c</in>
+          <in>turnc.c</in>
+          <in>turnc.h</in>
+        </df>
+        <df name="udp">
+          <in>mcast.c</in>
+          <in>udp.c</in>
+        </df>
+        <df name="uri">
+          <in>ucmp.c</in>
+          <in>uri.c</in>
+          <in>uric.c</in>
+        </df>
+        <df name="websock">
+          <in>websock.c</in>
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

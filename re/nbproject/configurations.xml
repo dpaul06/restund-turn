@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="include">
+        <in>re.h</in>
+        <in>re_aes.h</in>
+        <in>re_base64.h</in>
+        <in>re_bfcp.h</in>
+        <in>re_bitv.h</in>
+        <in>re_conf.h</in>
+        <in>re_crc32.h</in>
+        <in>re_dbg.h</in>
+        <in>re_dns.h</in>
+        <in>re_fmt.h</in>
+        <in>re_hash.h</in>
+        <in>re_hmac.h</in>
+        <in>re_http.h</in>
+        <in>re_httpauth.h</in>
+        <in>re_ice.h</in>
+        <in>re_jbuf.h</in>
+        <in>re_json.h</in>
+        <in>re_list.h</in>
+        <in>re_lock.h</in>
+        <in>re_main.h</in>
+        <in>re_mbuf.h</in>
+        <in>re_md5.h</in>
+        <in>re_mem.h</in>
+        <in>re_mod.h</in>
+        <in>re_mqueue.h</in>
+        <in>re_msg.h</in>
+        <in>re_natbd.h</in>
+        <in>re_net.h</in>
+        <in>re_odict.h</in>
+        <in>re_rtp.h</in>
+        <in>re_sa.h</in>
+        <in>re_sdp.h</in>
+        <in>re_sha.h</in>
+        <in>re_sip.h</in>
+        <in>re_sipevent.h</in>
+        <in>re_sipreg.h</in>
+        <in>re_sipsess.h</in>
+        <in>re_srtp.h</in>
+        <in>re_stun.h</in>
+        <in>re_sys.h</in>
+        <in>re_tcp.h</in>
+        <in>re_telev.h</in>
+        <in>re_tls.h</in>
+        <in>re_tmr.h</in>
+        <in>re_turn.h</in>
+        <in>re_types.h</in>
+        <in>re_udp.h</in>
+        <in>re_uri.h</in>
+        <in>re_websock.h</in>
+      </df>
+      <df name="src">
+        <df name="aes">
+          <df name="apple">
+            <in>aes.c</in>
+          </df>
+          <df name="openssl">
+            <in>aes.c</in>
+          </df>
+          <in>stub.c</in>
+        </df>
+        <df name="base64">
+          <in>b64.c</in>
+        </df>
+        <df name="bfcp">
+          <in>attr.c</in>
+          <in>bfcp.h</in>
+          <in>conn.c</in>
+          <in>msg.c</in>
+          <in>reply.c</in>
+          <in>request.c</in>
+        </df>
+        <df name="conf">
+          <in>conf.c</in>
+        </df>
+        <df name="crc32">
+          <in>crc32.c</in>
+        </df>
+        <df name="dbg">
+          <in>dbg.c</in>
+        </df>
+        <df name="dns">
+          <df name="darwin">
+            <in>srv.c</in>
+          </df>
+          <df name="win32">
+            <in>srv.c</in>
+          </df>
+          <in>client.c</in>
+          <in>cstr.c</in>
+          <in>dname.c</in>
+          <in>dns.h</in>
+          <in>hdr.c</in>
+          <in>ns.c</in>
+          <in>res.c</in>
+          <in>rr.c</in>
+          <in>rrlist.c</in>
+        </df>
+        <df name="fmt">
+          <in>ch.c</in>
+          <in>hexdump.c</in>
+          <in>pl.c</in>
+          <in>print.c</in>
+          <in>prm.c</in>
+          <in>regex.c</in>
+          <in>str.c</in>
+          <in>str_error.c</in>
+          <in>time.c</in>
+          <in>unicode.c</in>
+        </df>
+        <df name="hash">
+          <in>func.c</in>
+          <in>hash.c</in>
+        </df>
+        <df name="hmac">
+          <df name="apple">
+            <in>hmac.c</in>
+          </df>
+          <df name="openssl">
+            <in>hmac.c</in>
+          </df>
+          <in>hmac.c</in>
+          <in>hmac_sha1.c</in>
+        </df>
+        <df name="http">
+          <in>auth.c</in>
+          <in>chunk.c</in>
+          <in>client.c</in>
+          <in>http.h</in>
+          <in>msg.c</in>
+          <in>server.c</in>
+        </df>
+        <df name="httpauth">
+          <in>basic.c</in>
+          <in>digest.c</in>
+        </df>
+        <df name="ice">
+          <in>cand.c</in>
+          <in>candpair.c</in>
+          <in>chklist.c</in>
+          <in>comp.c</in>
+          <in>connchk.c</in>
+          <in>ice.c</in>
+          <in>ice.h</in>
+          <in>icem.c</in>
+          <in>icesdp.c</in>
+          <in>icestr.c</in>
+          <in>stunsrv.c</in>
+          <in>util.c</in>
+        </df>
+        <df name="jbuf">
+          <in>jbuf.c</in>
+        </df>
+        <df name="json">
+          <in>decode.c</in>
+          <in>decode_odict.c</in>
+          <in>encode.c</in>
+        </df>
+        <df name="list">
+          <in>list.c</in>
+        </df>
+        <df name="lock">
+          <df name="win32">
+            <in>lock.c</in>
+          </df>
+          <in>lock.c</in>
+          <in>rwlock.c</in>
+        </df>
+        <df name="main">
+          <in>epoll.c</in>
+          <in>init.c</in>
+          <in>main.c</in>
+          <in>main.h</in>
+          <in>method.c</in>
+          <in>openssl.c</in>
+        </df>
+        <df name="mbuf">
+          <in>mbuf.c</in>
+        </df>
+        <df name="md5">
+          <in>md5.c</in>
+          <in>md5.h</in>
+          <in>wrap.c</in>
+        </df>
+        <df name="mem">
+          <in>mem.c</in>
+          <in>secure.c</in>
+        </df>
+        <df name="mod">
+          <df name="win32">
+            <in>dll.c</in>
+          </df>
+          <in>dl.c</in>
+          <in>mod.c</in>
+          <in>mod_internal.h</in>
+        </df>
+        <df name="mqueue">
+          <df name="win32">
+            <in>pipe.c</in>
+          </df>
+          <in>mqueue.c</in>
+          <in>mqueue.h</in>
+        </df>
+        <df name="msg">
+          <in>ctype.c</in>
+          <in>param.c</in>
+        </df>
+        <df name="natbd">
+          <in>filtering.c</in>
+          <in>genalg.c</in>
+          <in>hairpinning.c</in>
+          <in>lifetime.c</in>
+          <in>mapping.c</in>
+          <in>natstr.c</in>
+        </df>
+        <df name="net">
+          <df name="bsd">
+            <in>brt.c</in>
+          </df>
+          <df name="linux">
+            <in>rt.c</in>
+          </df>
+          <df name="posix">
+            <in>pif.c</in>
+          </df>
+          <df name="win32">
+            <in>wif.c</in>
+          </df>
+          <in>if.c</in>
+          <in>ifaddrs.c</in>
+          <in>net.c</in>
+          <in>netstr.c</in>
+          <in>rt.c</in>
+          <in>sock.c</in>
+          <in>sockopt.c</in>
+        </df>
+        <df name="odict">
+          <in>entry.c</in>
+          <in>odict.c</in>
+          <in>type.c</in>
+        </df>
+        <df name="rtp">
+          <in>fb.c</in>
+          <in>member.c</in>
+          <in>ntp.c</in>
+          <in>pkt.c</in>
+          <in>rr.c</in>
+          <in>rtcp.c</in>
+          <in>rtcp.h</in>
+          <in>rtp.c</in>
+          <in>sdes.c</in>
+          <in>sess.c</in>
+          <in>source.c</in>
+        </df>
+        <df name="sa">
+          <in>ntop.c</in>
+          <in>printaddr.c</in>
+          <in>pton.c</in>
+          <in>sa.c</in>
+          <in>sa.h</in>
+        </df>
+        <df name="sdp">
+          <in>attr.c</in>
+          <in>format.c</in>
+          <in>media.c</in>
+          <in>msg.c</in>
+          <in>sdp.h</in>
+          <in>session.c</in>
+          <in>str.c</in>
+          <in>util.c</in>
+        </df>
+        <df name="sha">
+          <in>sha1.c</in>
+        </df>
+        <df name="sip">
+          <in>addr.c</in>
+          <in>auth.c</in>
+          <in>contact.c</in>
+          <in>cseq.c</in>
+          <in>ctrans.c</in>
+          <in>dialog.c</in>
+          <in>keepalive.c</in>
+          <in>keepalive_udp.c</in>
+          <in>msg.c</in>
+          <in>reply.c</in>
+          <in>request.c</in>
+          <in>sip.c</in>
+          <in>sip.h</in>
+          <in>strans.c</in>
+          <in>transp.c</in>
+          <in>via.c</in>
+        </df>
+        <df name="sipevent">
+          <in>listen.c</in>
+          <in>msg.c</in>
+          <in>notify.c</in>
+          <in>sipevent.h</in>
+          <in>subscribe.c</in>
+        </df>
+        <df name="sipreg">
+          <in>reg.c</in>
+        </df>
+        <df name="sipsess">
+          <in>accept.c</in>
+          <in>ack.c</in>
+          <in>close.c</in>
+          <in>connect.c</in>
+          <in>info.c</in>
+          <in>listen.c</in>
+          <in>modify.c</in>
+          <in>reply.c</in>
+          <in>request.c</in>
+          <in>sess.c</in>
+          <in>sipsess.h</in>
+        </df>
+        <df name="srtp">
+          <in>misc.c</in>
+          <in>replay.c</in>
+          <in>srtcp.c</in>
+          <in>srtp.c</in>
+          <in>srtp.h</in>
+          <in>stream.c</in>
+        </df>
+        <df name="stun">
+          <in>addr.c</in>
+          <in>attr.c</in>
+          <in>ctrans.c</in>
+          <in>dnsdisc.c</in>
+          <in>hdr.c</in>
+          <in>ind.c</in>
+          <in>keepalive.c</in>
+          <in>msg.c</in>
+          <in>rep.c</in>
+          <in>req.c</in>
+          <in>stun.c</in>
+          <in>stun.h</in>
+          <in>stunstr.c</in>
+        </df>
+        <df name="sys">
+          <in>daemon.c</in>
+          <in>endian.c</in>
+          <in>fs.c</in>
+          <in>rand.c</in>
+          <in>sleep.c</in>
+          <in>sys.c</in>
+        </df>
+        <df name="tcp">
+          <in>tcp.c</in>
+          <in>tcp_high.c</in>
+        </df>
+        <df name="telev">
+          <in>telev.c</in>
+        </df>
+        <df name="tls">
+          <df name="openssl">
+            <in>tls.c</in>
+            <in>tls.h</in>
+            <in>tls_tcp.c</in>
+            <in>tls_udp.c</in>
+          </df>
+        </df>
+        <df name="tmr">
+          <in>tmr.c</in>
+        </df>
+        <df name="turn">
+          <in>chan.c</in>
+          <in>perm.c</in>
+          <in>turnc.c</in>
+          <in>turnc.h</in>
+        </df>
+        <df name="udp">
+          <in>mcast.c</in>
+          <in>udp.c</in>
+        </df>
+        <df name="uri">
+          <in>ucmp.c</in>
+          <in>uri.c</in>
+          <in>uric.c</in>
+        </df>
+        <df name="websock">
+          <in>websock.c</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="include/re.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_aes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_base64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_bfcp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_bitv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_crc32.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_dbg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_dns.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_fmt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_hash.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_hmac.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_http.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_httpauth.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_ice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_jbuf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_json.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_lock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_main.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_mbuf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_mem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_mod.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_mqueue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_msg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_natbd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_net.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_odict.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_rtp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_sa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_sdp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_sha.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_sip.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_sipevent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_sipreg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_sipsess.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_srtp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_stun.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_sys.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_tcp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_telev.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_tls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_tmr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_turn.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_udp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_uri.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/re_websock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/aes/apple/aes.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/aes/openssl/aes.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/aes/stub.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/base64/b64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bfcp/attr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bfcp/bfcp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bfcp/conn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bfcp/msg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bfcp/reply.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bfcp/request.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/conf/conf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/crc32/crc32.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dbg/dbg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/client.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/cstr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/darwin/srv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/dname.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/dns.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/dns/hdr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/ns.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/res.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/rr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/rrlist.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dns/win32/srv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/ch.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/hexdump.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/pl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/print.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/prm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/regex.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/str.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/str_error.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/time.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fmt/unicode.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/hash/func.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/hash/hash.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/hmac/apple/hmac.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/hmac/hmac.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/hmac/hmac_sha1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/hmac/openssl/hmac.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/http/auth.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/http/chunk.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/http/client.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/http/http.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/http/msg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/http/server.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/httpauth/basic.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/httpauth/digest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/cand.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/candpair.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/chklist.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/comp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/connchk.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/ice.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/ice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ice/icem.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/icesdp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/icestr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/stunsrv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ice/util.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/jbuf/jbuf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/json/decode.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/json/decode_odict.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/json/encode.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/list/list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/lock/lock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/lock/rwlock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/lock/win32/lock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/main/epoll.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/main/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/main/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/main/main.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/method.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/main/openssl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/mbuf/mbuf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/md5/md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/md5/md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/md5/wrap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/mem/mem.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/mem/secure.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/mod/dl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/mod/mod.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/mod/mod_internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/mod/win32/dll.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/mqueue/mqueue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/mqueue/mqueue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/mqueue/win32/pipe.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/msg/ctype.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/msg/param.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/natbd/filtering.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/natbd/genalg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/natbd/hairpinning.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/natbd/lifetime.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/natbd/mapping.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/natbd/natstr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/bsd/brt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/if.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/ifaddrs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/linux/rt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/net.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/netstr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/posix/pif.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/rt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/sock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/sockopt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net/win32/wif.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/odict/entry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/odict/odict.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/odict/type.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/fb.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/member.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/ntp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/pkt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/rr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/rtcp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/rtcp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/rtp/rtp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/sdes.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/sess.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/rtp/source.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sa/ntop.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sa/printaddr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sa/pton.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sa/sa.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sa/sa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/sdp/attr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sdp/format.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sdp/media.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sdp/msg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sdp/sdp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/sdp/session.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sdp/str.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sdp/util.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sha/sha1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/addr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/auth.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/contact.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/cseq.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/ctrans.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/dialog.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/keepalive.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/keepalive_udp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/msg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/reply.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/request.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/sip.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/sip.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/sip/strans.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/transp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sip/via.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipevent/listen.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipevent/msg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipevent/notify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipevent/sipevent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/sipevent/subscribe.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipreg/reg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/accept.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/ack.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/close.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/connect.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/info.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/listen.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/reply.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/request.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/sess.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sipsess/sipsess.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/srtp/misc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/srtp/replay.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/srtp/srtcp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/srtp/srtp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/srtp/srtp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/srtp/stream.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/addr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/attr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/ctrans.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/dnsdisc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/hdr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/ind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/keepalive.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/msg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/rep.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/req.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/stun.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun/stun.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/stun/stunstr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sys/daemon.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sys/endian.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sys/fs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sys/rand.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sys/sleep.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/sys/sys.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/tcp/tcp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/tcp/tcp_high.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/telev/telev.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/tls/openssl/tls.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/tls/openssl/tls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tls/openssl/tls_tcp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/tls/openssl/tls_udp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/tmr/tmr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/turn/chan.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/turn/perm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/turn/turnc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/turn/turnc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/udp/mcast.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/udp/udp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/uri/ucmp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/uri/uri.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/uri/uric.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/websock/websock.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

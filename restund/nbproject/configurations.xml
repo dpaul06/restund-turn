@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="include">
+        <in>restund.h</in>
+      </df>
+      <df name="modules">
+        <df name="auth">
+          <in>auth.c</in>
+        </df>
+        <df name="binding">
+          <in>binding.c</in>
+        </df>
+        <df name="filedb">
+          <in>filedb.c</in>
+        </df>
+        <df name="mysql_ser">
+          <in>mysql_ser.c</in>
+        </df>
+        <df name="restauth">
+          <in>restauth.c</in>
+        </df>
+        <df name="stat">
+          <in>stat.c</in>
+        </df>
+        <df name="status">
+          <in>httpd.c</in>
+          <in>httpd.h</in>
+          <in>status.c</in>
+        </df>
+        <df name="syslog">
+          <in>syslog.c</in>
+        </df>
+        <df name="turn">
+          <in>alloc.c</in>
+          <in>chan.c</in>
+          <in>perm.c</in>
+          <in>turn.c</in>
+          <in>turn.h</in>
+        </df>
+      </df>
+      <df name="src">
+        <in>cmd.c</in>
+        <in>db.c</in>
+        <in>dtls.c</in>
+        <in>log.c</in>
+        <in>main.c</in>
+        <in>stun.c</in>
+        <in>stund.h</in>
+        <in>tcp.c</in>
+        <in>udp.c</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="include/restund.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="modules/auth/auth.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/binding/binding.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/filedb/filedb.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/mysql_ser/mysql_ser.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/restauth/restauth.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/stat/stat.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/status/httpd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/status/httpd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="modules/status/status.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/syslog/syslog.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/turn/alloc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/turn/chan.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/turn/perm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/turn/turn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modules/turn/turn.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/cmd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/db.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dtls.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/log.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stun.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/stund.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tcp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/udp.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
