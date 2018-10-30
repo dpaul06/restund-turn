@@ -69,6 +69,86 @@ sudo util/genha1.sh $USER $REALM $PASS >> etc/restund.auth
 
 # Here util is under restund folder.
 
+# this whole part above can be done by running the build.sh file
+
+# Now we have to configure etc/restund.auth . Giving a sample Conf file below 
+
+#
+# restund.conf
+#
+
+# core
+daemon			yes
+debug			no
+realm			**REALM**
+syncinterval		600
+udp_listen		**BIND_IP:BIND_PORT**
+#udp_listen		1.2.3.4:3478
+udp_sockbuf_size	524288
+tcp_listen		**BIND_IP:BIND_PORT**
+#tcp_listen		1.2.3.4:3478
+#tls_listen		1.2.3.4:5349,/etc/cert.pem
+#dtls_listen		1.2.3.4:5349,/etc/cert.pem
+#dtls_sockbuf_size	524288
+#dtls_hash_size		512
+
+# modules (STUN messages are processed in module loading order)
+module_path		/usr/local/lib/restund/modules
+module			stat.so
+module			binding.so
+module			auth.so
+module			turn.so
+#module			mysql_ser.so
+module			filedb.so
+#module			restauth.so
+module			syslog.so
+module			status.so
+
+# auth
+auth_nonce_expiry	3600
+
+# turn
+turn_max_allocations	512
+turn_max_lifetime	600
+turn_relay_addr		**BIND_IP**
+turn_relay_addr6	::1
+turn_min_udp_alloc_port    **MIN_PORT**
+turn_max_udp_alloc_port    **MAX_PORT**
+
+# mysql
+mysql_host		localhost
+mysql_user		ser
+mysql_pass		heslo
+mysql_db		ser
+mysql_ser		0
+
+# filedb
+filedb_path		/etc/restund.auth
+
+# syslog
+syslog_facility		24
+
+# status
+status_udp_addr		**BIND_IP**
+status_udp_port		33000
+status_http_addr	**BIND_IP**
+status_http_port	9999
+
+
+
+# after saving the configuration you have to copy the etc folder to system etc that means /etc/ folder
+
+cd restund/
+cp ./etc/* /etc/
+
+# now all done.. :)
+# please run below command to start the turn server
+
+restund
+
+# after running we need the check if the ports are bound properly.
+
+netstat -nlp | grep restund
 
 ```
 
