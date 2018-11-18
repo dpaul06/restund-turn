@@ -1,0 +1,16 @@
+
+[Unit]
+Description=restund turn server
+After=syslog.target network-online.target
+StartLimitIntervalSec=10
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/restund
+ExecStop=`ps axf | grep restund | grep -v grep | awk '{print "kill -9 " $1}' | sh`
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

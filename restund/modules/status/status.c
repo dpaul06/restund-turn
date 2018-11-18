@@ -59,7 +59,7 @@ static void httpd_handler(const struct pl *uri, struct mbuf *mb)
 			    refresh);
 
 	mbuf_write_str(mb, "</head>\n<body>\n");
-	mbuf_write_str(mb, "<h2>Restund Server Status</h2>\n");
+	mbuf_write_str(mb, "<h2>🙂 Restund Server Status 🙂</h2>\n");
 	server_info(mb);
 	mbuf_write_str(mb, "<hr size=\"1\"/>\n<pre>\n");
 	restund_cmd(&cmd, mb);
