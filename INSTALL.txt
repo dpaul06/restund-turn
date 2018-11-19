@@ -17,6 +17,16 @@ sudo make install
 sudo echo "/usr/local/lib" > /etc/ld.so.conf.d/restund.conf
 sudo ldconfig
 
+# if you want to run restund as service copy the 'service/restund.service' to /etc/systemd/system/ and run below commands.
+
+cd ..
+cp service/restund.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable restund
+sudo systemctl start restund
+systemctl status restund
+
+
 # Now the installation of this server is done. But before we start the server we shall need to configure restund.auth and restund.conf file in etc folder in restund and then copy them in system /etc/ folder. Lets first configure restund.auth file.
 
 # Configuring restund.auth. For this we first need to generate a ha1 hash by added user realm and pass. the command is like below.
@@ -35,7 +45,7 @@ sudo util/genha1.sh $USER $REALM $PASS >> etc/restund.auth
 #
 
 # core
-daemon          yes
+daemon          no
 debug           no
 realm           **REALM**
 syncinterval        600
