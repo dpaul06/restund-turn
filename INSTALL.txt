@@ -17,7 +17,7 @@ sudo make install
 sudo echo "/usr/local/lib" > /etc/ld.so.conf.d/restund.conf
 sudo ldconfig
 
-# if you want to run restund as service copy the 'service/restund.service' to /etc/systemd/system/ and run below commands.
+# if you want to run restund as service copy the 'service/restund.service' to /etc/systemd/system/ and run below commands and you have to make sure in restund.conf file you set deamon no.
 
 cd ..
 cp service/restund.service /etc/systemd/system/
